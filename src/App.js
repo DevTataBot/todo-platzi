@@ -1,5 +1,7 @@
 import React from "react";
 import TodoCounter from "./Components/TodoCounter";
+import TodoItems from "./Components/TodoItems";
+import TodoSearch from "./Components/TodoSearch";
 
 const App = () => {
   const todos = [
@@ -10,9 +12,8 @@ const App = () => {
   return (
    <>
     <TodoCounter/>
-    <input placeholder='Todo'/>
-    {todos.map(list =>
-      <div>{list.text}</div>)}
+    <TodoSearch />
+    <TodoItems task={todos} />
     </>
    
   )
