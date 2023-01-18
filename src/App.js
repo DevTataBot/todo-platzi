@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TodoCounter from "./Components/TodoCounter";
 
-function App() {
+const App = () => {
+  const todos = [
+    {text: 'Tarea tuturutu', complete: false},
+    {text: 'Tarea tuturut2', complete: false},
+    {text: 'Estudiar', complete: false}
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <>
+    <TodoCounter/>
+    <input placeholder='Todo'/>
+    {todos.map(list =>
+      <div>{list.text}</div>)}
+    </>
+   
+  )
 }
 
-export default App;
+export default App
