@@ -1,8 +1,13 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: 'Bree Serif', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #344e41;
+  box-sizing: border-box;
 }
 
 code {

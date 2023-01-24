@@ -1,0 +1,36 @@
+.TodoItem{
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.TodoItem__item{
+    list-style: none;
+    line-height: 0;
+}
+.TodoItem__container{
+    display: flex;
+    background-color: #a3b18a;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    height: 30px;
+    padding: 0 8px;
+}
+.TodoItem__checkbox{
+    height: 30px;
+    width: 30px;
+}
+
+.TodoItem__checkbox:checked{
+    background-color: aqua;
+    color: red;
+}
+.TodoItem__delete{
+    border: none;
+    background-color: transparent;
+}
+.TodoItem__delete:hover{
+    cursor: pointer;
+}
