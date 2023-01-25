@@ -2,14 +2,16 @@
     display: flex;
     margin-bottom: 8px;
     align-items: center;
+    font-weight: 100;
 }
 .TodoItem__item{
     list-style: none;
     line-height: 0;
+    color: #fff;
 }
 .TodoItem__container{
     display: flex;
-    background-color: #a3b18a;
+    background-color: #3a5a40;
     justify-content: space-between;
     width: 100%;
     border: none;
@@ -30,7 +32,15 @@
 .TodoItem__delete{
     border: none;
     background-color: transparent;
+    color: #fff;
 }
 .TodoItem__delete:hover{
     cursor: pointer;
+}
+
+/* .complete{
+    background-color: #3a5a40;
+} */
+.complete__text{
+    text-decoration: line-through;
 }
