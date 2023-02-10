@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.css";
-const TodoItems = ({ task }) => {
+const TodoItems = ({ task, onComplete, onDelete }) => {
     const handlerCheckTask = () => {
-        console.log('tarea hecha')
+        onComplete()
     }
     const handlerDeleteTask = () => {
-        console.log('tarea eliminada')
+        onDelete()
     }
   return (
     <li className="TodoItem">
