@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { TodoContext } from "../../TodoContext";
 import "./styles.css";
 
-const TodoSearch = ({setValueSearch, valueSearch}) => {
-  const hanldeSearch = (e) => {
-    setValueSearch(e.target.value)
-  };
+const TodoSearch = () => {
+  const {setValueSearch, valueSearch} = useContext(TodoContext)
+  const hanldeSearch = (e) => setValueSearch(e.target.value)
   return (
     <div className="TodoSearch">
       <input
