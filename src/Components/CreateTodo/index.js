@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles.css";
 
-const CreateTodoButton = () => {
+const CreateTodoButton = ({setOpenModal, openModal}) => {
   const createNewTask = () => {
-    console.log("rcreando nueva tareita");
+    setOpenModal(!openModal)
   };
   return (
     <button onClick={() => createNewTask()} className="CreateTodoButton">
