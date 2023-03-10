@@ -1,15 +1,49 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: 'Bree Serif', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #dad7cd;
   box-sizing: border-box;
 }
 
 code {
   font-family: 'Bree Serif', serif;
+}
+
+.TodoView {
+  padding: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.TodoView-img {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.img{
+  height: 60%;
+}
+
+.TodoView-todo {
+  margin-right: 150px;
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 460px;
+  overflow-y: scroll;
+  background-color: #eee2df;
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px #b4b4b490;
+}
+.TodoView-todo::-webkit-scrollbar{
+  display: none;
 }
