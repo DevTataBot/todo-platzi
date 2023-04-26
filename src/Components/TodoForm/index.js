@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { TodoContext } from "../../TodoContext";
-
+import './styles.css'
 const TodoForm = () => {
   const { addTodo, setOpenModal } = useContext(TodoContext)
   const [task, setTask] = useState()
@@ -17,18 +17,22 @@ const TodoForm = () => {
     setTask(e.target.value)
   }
   return(
-    <form onSubmit={onCreate}>
-      <label>Crea una nueva tarea</label>
+    <div className="form-container">
+      <form onSubmit={onCreate} className="form-content">
+      <label className="form-label">Crea una nueva tarea</label>
       <input 
+        className="form-input"
         placeholder="Nueva tarea"
         value={task}
         onChange={handleChange}
       />
-      <div>
+      <div className="form-buttons">
         <button type="button" onClick={onCancel}>Cancelar</button>
         <button type='submit' onClick={onCreate}>Añadir</button>
       </div>
-    </form>
+    </form> 
+    </div>
+   
   )
 }
 

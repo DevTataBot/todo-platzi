@@ -7,7 +7,7 @@ const CreateTodoButton = ({setOpenModal, openModal}) => {
   };
   return (
     <button onClick={() => createNewTask()} className="CreateTodoButton">
-      +
+      {openModal ? 'x' : '+'}
     </button>
   );
 };
