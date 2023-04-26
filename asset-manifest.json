@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/basic-react/static/css/main.bb314830.css",
+    "main.js": "/basic-react/static/js/main.9522c6f6.js",
+    "static/media/background.svg": "/basic-react/static/media/background.cca4edbbf2367c5894e3a11a0fc95ee7.svg",
+    "index.html": "/basic-react/index.html",
+    "main.bb314830.css.map": "/basic-react/static/css/main.bb314830.css.map",
+    "main.9522c6f6.js.map": "/basic-react/static/js/main.9522c6f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb314830.css",
+    "static/js/main.9522c6f6.js"
+  ]
+}
